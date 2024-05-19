@@ -6,6 +6,7 @@ import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
 import {tw} from '../constants';
 import Performance from "./components/Performance";
 import PDFCalendar from "./components/PDFCalendar";
+import DeploymentTable from "./components/DeploymentTable"; 
 
 import IntroHero from "./components/IntroHero";
 
@@ -43,6 +44,7 @@ const MyDocument = () => (
         <Text>Section #2</Text>
       </View> */}
       <Performance/>
+      <DeploymentTable/>
     </Page>
     <PDFCalendar year={2022} month={0}/>
 

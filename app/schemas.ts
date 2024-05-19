@@ -13,3 +13,9 @@ export type PerformanceData = {
     description: string,
     critical: boolean
   }
+
+
+export type DeploymentSchema = {
+    label: string;
+    info: string;
+  };

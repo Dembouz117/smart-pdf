@@ -1,6 +1,18 @@
-import { missionSchema } from '../schemas';
+import { missionSchema, DeploymentSchema } from '../schemas';
 import moment, { Moment } from 'moment';
 
+
+//Deployment Data
+export const deploymentData: DeploymentSchema[] = [
+  { label: "Customer Name", info: "Fullerton" },
+  { label: "Timezone", info: "Singapore (UTC+08:00)" },
+  { label: "Robot Model", info: "Halo V1 (Outdoor Security Robot)" },
+  { label: "Site / Location", info: "One Fullerton" },
+  { label: "Report Period", info: "01 Feb 2024 - 27 Feb 2024" },
+  { label: "Robot Name", info: "Halo13_One_Fullerton" },
+];
+
+//  Mission Data
 export const mockMissions: missionSchema[] = [
   {
     id: 1,
@@ -202,3 +214,4 @@ export const performanceData: Record<string, PerformanceData> = {
     critical: false
   },
 };
+
