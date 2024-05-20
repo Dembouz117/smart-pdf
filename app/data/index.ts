@@ -1,5 +1,5 @@
-import { missionSchema, DeploymentSchema } from '../schemas';
-import moment, { Moment } from 'moment';
+import { missionSchema, DeploymentSchema, AlertGroupSchema, AlertCardSchema } from '../schemas';
+import moment from 'moment';
 
 
 //Deployment Data
@@ -214,4 +214,108 @@ export const performanceData: Record<string, PerformanceData> = {
     critical: false
   },
 };
+
+// Alert Data
+export const alertGroupItems: AlertGroupSchema[] = [
+  {
+    location: 'Level 1',
+    locationId: 1,
+    alerts: [
+      {
+        id: 1,
+        title: 'Suspicious Object Detected',
+        time: '12:00 PM',
+        src1: 'https://via.placeholder.com/150',
+        src2: 'https://via.placeholder.com/150',
+      },
+      {
+        id: 2,
+        title: 'Unauthorized Access Attempt',
+        time: '12:30 PM',
+        src1: 'https://via.placeholder.com/150',
+        src2: 'https://via.placeholder.com/150',
+      },
+    ],
+  },
+  {
+    location: 'Level 2',
+    locationId: 2,
+    alerts: [
+      {
+        id: 3,
+        title: 'Suspicious Object Detected',
+        time: '1:00 PM',
+        src1: 'https://via.placeholder.com/150',
+        src2: 'https://via.placeholder.com/150',
+      },
+      {
+        id: 4,
+        title: 'Unauthorized Access Attempt',
+        time: '1:30 PM',
+        src1: 'https://via.placeholder.com/150',
+        src2: 'https://via.placeholder.com/150',
+      },
+    ],
+  },
+  {
+    location: 'Level 3',
+    locationId: 3,
+    alerts: [
+      {
+        id: 5,
+        title: 'Suspicious Object Detected',
+        time: '2:00 PM',
+        src1: 'https://via.placeholder.com/150',
+        src2: 'https://via.placeholder.com/150',
+      },
+      {
+        id: 6,
+        title: 'Unauthorized Access Attempt',
+        time: '2:30 PM',
+        src1: 'https://via.placeholder.com/150',
+        src2: 'https://via.placeholder.com/150',
+      },
+    ],
+  },
+  {
+    location: 'Level 4',
+    locationId: 4,
+    alerts: [
+      {
+        id: 7,
+        title: 'Suspicious Object Detected',
+        time: '3:00 PM',
+        src1: 'https://via.placeholder.com/150',
+        src2: 'https://via.placeholder.com/150',
+      },
+      {
+        id: 8,
+        title: 'Unauthorized Access Attempt',
+        time: '3:30 PM',
+        src1: 'https://via.placeholder.com/150',
+        src2: 'https://via.placeholder.com/150',
+      },
+    ],
+  },
+  {
+    location: 'Level 5',
+    locationId: 5,
+    alerts: [
+      {
+        id: 9,
+        title: 'Suspicious Object Detected',
+        time: '4:00 PM',
+        src1: 'https://via.placeholder.com/150',
+        src2: 'https://via.placeholder.com/150',
+      },
+      {
+        id: 10,
+        title: 'Unauthorized Access Attempt',
+        time: '4:30 PM',
+        src1: 'https://via.placeholder.com/150',
+        src2: 'https://via.placeholder.com/150',
+      },
+    ],
+  },
+];
 

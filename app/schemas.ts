@@ -18,4 +18,19 @@ export type PerformanceData = {
 export type DeploymentSchema = {
     label: string;
     info: string;
-  };
+};
+
+export type AlertCardSchema = {
+  id: number;
+  title: string;
+  time: string;
+  src1: string;
+  src2: string;
+}
+
+export type AlertGroupSchema = {
+  location: string;
+  locationId: number;
+  alerts: AlertCardSchema[];
+}
+

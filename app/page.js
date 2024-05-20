@@ -7,6 +7,7 @@ import {tw} from '../constants';
 import Performance from "./components/Performance";
 import PDFCalendar from "./components/PDFCalendar";
 import DeploymentTable from "./components/DeploymentTable"; 
+import AlertGroup from "./components/va_alert/AlertGroup";
 
 import IntroHero from "./components/IntroHero";
 
@@ -45,6 +46,7 @@ const MyDocument = () => (
       </View> */}
       <Performance/>
       <DeploymentTable/>
+      <AlertGroup/>
     </Page>
     <PDFCalendar year={2022} month={0}/>
 

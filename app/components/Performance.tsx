@@ -23,10 +23,11 @@ const SummaryRow: React.FC<{ leftLabel: string, rightValue: string | number }> =
   </View>
 )
 
-const PerformaceTable: React.FC <{performanceMetrics : PerformanceData[]}> = ({ performanceMetrics }) => {
+const PerformanceTable: React.FC <{performanceMetrics : PerformanceData[], colorIndex: number}> = ({ performanceMetrics, colorIndex }) => {
+  const colorUtility = colorIndex % 2 === 0 ? "bg-kabam-default" : "bg-kabam-alternate";
   return (
     <View style={tw("flex flex-col w-1/2 mx-2")}>
-      <View style={tw("flex flex-col grow justify-center py-2 mx-auto w-full rounded-lg bg-kabam-default leading-[160%] max-md:mt-4")}>
+      <View style={tw(`flex flex-col grow justify-center py-2 mx-auto w-full rounded-lg ${colorUtility} leading-[160%] max-md:mt-4`)}>
         {performanceMetrics.map((data, idx) => (<SummaryRow key={idx} leftLabel={data.label} rightValue={data.value} />))}
       </View>
     </View>
@@ -64,7 +65,7 @@ const Performance: React.FC = () => {
       <View style={tw("flex flex-row gap-5 max-md:gap-0 justify-between")}>
         
         {tables.map((table, index) => (
-          <PerformaceTable key={index} performanceMetrics={table} />
+          <PerformanceTable key={index} performanceMetrics={table} colorIndex={index}/>
         ))}        
       </View>
     </View>

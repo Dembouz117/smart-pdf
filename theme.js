@@ -7,7 +7,8 @@ const tailwindTheme = {
       },
       colors:{
         kabam: {
-          default: "#001A77"
+          default: "#001A77",
+          alternate: "#334892",
         }
       }
     },
