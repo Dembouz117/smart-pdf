@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import React from 'react';
 import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
+import ReactPDF from '@react-pdf/renderer';
 import {tw} from '../constants';
 import Performance from "./components/Performance";
 import PDFCalendar from "./components/PDFCalendar";

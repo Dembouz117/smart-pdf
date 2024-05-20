@@ -235,6 +235,7 @@ export const alertGroupItems: AlertGroupSchema[] = [
         src1: 'https://via.placeholder.com/150',
         src2: 'https://via.placeholder.com/150',
       },
+      
     ],
   },
   {
