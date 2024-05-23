@@ -1,14 +1,14 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import React from 'react';
+import React, { useState } from 'react';
 import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
-import ReactPDF from '@react-pdf/renderer';
-import {tw} from '../constants';
 import Performance from "./components/Performance";
 import PDFCalendar from "./components/PDFCalendar";
 import DeploymentTable from "./components/DeploymentTable"; 
 import AlertGroup from "./components/va_alert/AlertGroup";
+import PDFChartHolder from "./components/charts/PDFChartHolder";
+import AlertChart from "./components/charts/AlertChart";
 
 import IntroHero from "./components/IntroHero";
 
@@ -36,28 +36,45 @@ const styles = StyleSheet.create({
   }
 });
 
+
+
 // Create Document Component
-const MyDocument = () => (
+const MyDocument = () => {
+  const [chartImage, setChartImage] = useState(null);
+  
+  return (
   <Document className="w-full h-3/4">
     <Page size="A4" className="w-full">
       <IntroHero/>
-      {/* <View style={styles.row}>
-        <Text style={tw("text-red-200 text-3xl")}>Section #1</Text>
-        <Text>Section #2</Text>
-      </View> */}
       <Performance/>
       <DeploymentTable/>
       <AlertGroup/>
-    </Page>
-    <PDFCalendar year={2022} month={0}/>
 
+      
+    <PDFCalendar year={2022} month={0}/>
+  </Page>
   </Document>
-);
+)};
 export default function Home() {
+  const [chartImage, setChartImage] = useState(null);
+
   return (
   <>
+      <AlertChart setChartImage={setChartImage} />
+      
       <PDFViewer className="w-screen h-screen bg-red-200">
-        <MyDocument/>
+        {/* <MyDocument/> */}
+        <Document className="w-full h-3/4">
+        <Page size="A4" className="w-full">
+          <IntroHero/>
+          <Performance/>
+          <DeploymentTable/>
+          <AlertGroup/>
+          {/* {chartImage && <PDFChartHolder chartImage={chartImage} />} */}
+          
+        <PDFCalendar year={2022} month={0}/>
+      </Page>
+      </Document>
       </PDFViewer>
 
   </>
