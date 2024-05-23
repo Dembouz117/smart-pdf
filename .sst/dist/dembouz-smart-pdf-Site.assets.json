@@ -1,0 +1,62 @@
+{
+  "version": "36.0.0",
+  "files": {
+    "3b77d99d23717d7f85e759c5738132f511b2f0397cf69bc81e45ecf22e1c6e14": {
+      "source": {
+        "path": "asset.3b77d99d23717d7f85e759c5738132f511b2f0397cf69bc81e45ecf22e1c6e14",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "626788337417-us-east-1": {
+          "bucketName": "cdk-hnb659fds-assets-626788337417-us-east-1",
+          "objectKey": "3b77d99d23717d7f85e759c5738132f511b2f0397cf69bc81e45ecf22e1c6e14.zip",
+          "region": "us-east-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::626788337417:role/cdk-hnb659fds-file-publishing-role-626788337417-us-east-1"
+        }
+      }
+    },
+    "4e26bf2d0a26f2097fb2b261f22bb51e3f6b4b52635777b1e54edbd8e2d58c35": {
+      "source": {
+        "path": "asset.4e26bf2d0a26f2097fb2b261f22bb51e3f6b4b52635777b1e54edbd8e2d58c35",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "626788337417-us-east-1": {
+          "bucketName": "cdk-hnb659fds-assets-626788337417-us-east-1",
+          "objectKey": "4e26bf2d0a26f2097fb2b261f22bb51e3f6b4b52635777b1e54edbd8e2d58c35.zip",
+          "region": "us-east-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::626788337417:role/cdk-hnb659fds-file-publishing-role-626788337417-us-east-1"
+        }
+      }
+    },
+    "43db4e9c09b3d90894ac0e6a99cc772ebba66f1347a112381117de5d1c34b236": {
+      "source": {
+        "path": "asset.43db4e9c09b3d90894ac0e6a99cc772ebba66f1347a112381117de5d1c34b236.zip",
+        "packaging": "file"
+      },
+      "destinations": {
+        "626788337417-us-east-1": {
+          "bucketName": "cdk-hnb659fds-assets-626788337417-us-east-1",
+          "objectKey": "43db4e9c09b3d90894ac0e6a99cc772ebba66f1347a112381117de5d1c34b236.zip",
+          "region": "us-east-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::626788337417:role/cdk-hnb659fds-file-publishing-role-626788337417-us-east-1"
+        }
+      }
+    },
+    "1bcea5f8358094ffca574feec25f9bf2ea33fc4c16e319ab4ec89cd11d49c90c": {
+      "source": {
+        "path": "dembouz-smart-pdf-Site.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "626788337417-us-east-1": {
+          "bucketName": "cdk-hnb659fds-assets-626788337417-us-east-1",
+          "objectKey": "1bcea5f8358094ffca574feec25f9bf2ea33fc4c16e319ab4ec89cd11d49c90c.json",
+          "region": "us-east-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::626788337417:role/cdk-hnb659fds-file-publishing-role-626788337417-us-east-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

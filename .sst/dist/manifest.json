@@ -1,0 +1,174 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "dembouz-smart-pdf-Site.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "dembouz-smart-pdf-Site.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "dembouz-smart-pdf-Site": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://626788337417/us-east-1",
+      "properties": {
+        "templateFile": "dembouz-smart-pdf-Site.template.json",
+        "terminationProtection": false,
+        "tags": {
+          "sst:app": "smart-pdf",
+          "sst:stage": "dembouz"
+        },
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::626788337417:role/cdk-hnb659fds-deploy-role-626788337417-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::626788337417:role/cdk-hnb659fds-cfn-exec-role-626788337417-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-626788337417-us-east-1/1bcea5f8358094ffca574feec25f9bf2ea33fc4c16e319ab4ec89cd11d49c90c.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "dembouz-smart-pdf-Site.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::626788337417:role/cdk-hnb659fds-lookup-role-626788337417-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "dembouz-smart-pdf-Site.assets"
+      ],
+      "metadata": {
+        "/dembouz-smart-pdf-Site": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "sst:app",
+                "Value": "smart-pdf"
+              },
+              {
+                "Key": "sst:stage",
+                "Value": "dembouz"
+              }
+            ]
+          }
+        ],
+        "/dembouz-smart-pdf-Site/CustomResourceHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomResourceHandlerServiceRole41AEC181"
+          }
+        ],
+        "/dembouz-smart-pdf-Site/CustomResourceHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomResourceHandlerE8FB56BA"
+          }
+        ],
+        "/dembouz-smart-pdf-Site/bucket/Bucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "bucketBucketF19722A9"
+          }
+        ],
+        "/dembouz-smart-pdf-Site/bucket/Bucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "bucketBucketPolicyCB3646ED"
+          }
+        ],
+        "/dembouz-smart-pdf-Site/bucket/Parameter_bucketName/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "bucketParameterbucketName121DCDDE"
+          }
+        ],
+        "/dembouz-smart-pdf-Site/site/ServerFunctionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunctionRole1F8F4FAC"
+          }
+        ],
+        "/dembouz-smart-pdf-Site/site/ServerFunctionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunctionRoleDefaultPolicy213DB8A5"
+          }
+        ],
+        "/dembouz-smart-pdf-Site/site/ServerFunction/AssetReplacerPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunctionAssetReplacerPolicy304BF125"
+          }
+        ],
+        "/dembouz-smart-pdf-Site/site/ServerFunction/AssetReplacer/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunctionAssetReplacer9A11D516"
+          }
+        ],
+        "/dembouz-smart-pdf-Site/site/ServerFunction/ServerFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunction6DFA6F1B"
+          }
+        ],
+        "/dembouz-smart-pdf-Site/site/ServerFunction/ServerFunction/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunctionLogRetention7123678D"
+          }
+        ],
+        "/dembouz-smart-pdf-Site/site/Parameter_url/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteParameterurl3D1716BC"
+          }
+        ],
+        "/dembouz-smart-pdf-Site/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+          }
+        ],
+        "/dembouz-smart-pdf-Site/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB"
+          }
+        ],
+        "/dembouz-smart-pdf-Site/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A"
+          }
+        ],
+        "/dembouz-smart-pdf-Site/SSTStackOutputSSTMetadata": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SSTMetadata"
+          }
+        ],
+        "/dembouz-smart-pdf-Site/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/dembouz-smart-pdf-Site/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "dembouz-smart-pdf-Site"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}

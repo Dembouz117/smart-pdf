@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST='{"app/page.js -> @react-pdf/renderer":{"id":3319,"files":[]}}';
