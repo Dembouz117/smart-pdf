@@ -33,7 +33,7 @@ const VaChart = () => {
     const maxDataValue = Math.max(...data);
 
     // Define the ceiling value (maximum value or another value of your choice)
-    const ceiling = Math.ceil(maxDataValue / 10) * 10; // Round up to the nearest 10
+    const ceiling = Math.ceil(maxDataValue / 10) * 10; 
 
     // Calculate the differences between the ceiling and the actual data
     const differenceDataSet = data.map(value => ceiling - value);

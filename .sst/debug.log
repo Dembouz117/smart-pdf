@@ -1,12 +1,21 @@
-2024-05-24T06:22:59.233Z    +67ms [debug] Config loaded {"version":"2.42.0","cdkVersion":"2.142.1","constructsVersion":"10.3.0","config":{"name":"smart-pdf","region":"us-east-1","stage":"dembouz","ssmPrefix":"/sst/smart-pdf/dembouz/"},"metafile":{"inputs":{"sst.config.ts":{"bytes":213,"imports":[{"path":"sst","kind":"import-statement","external":true},{"path":"sst/constructs","kind":"import-statement","external":true}],"format":"esm"}},"outputs":{".sst.config.1716531779182.mjs":{"imports":[],"exports":["default"],"entryPoint":"sst.config.ts","inputs":{"sst.config.ts":{"bytesInOutput":124}},"bytes":306}}},"paths":{"config":"/Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf/sst.config.ts","root":"/Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf","out":"/Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf/.sst","artifacts":"/Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf/.sst/artifacts"}}
-2024-05-24T06:22:59.691Z   +458ms [debug] Using AWS profile 
-2024-05-24T06:22:59.693Z     +2ms [debug] Created AWS client STSClient
-2024-05-24T06:22:59.694Z     +1ms [debug] Fetching app metadata
-2024-05-24T06:22:59.694Z     +0ms [debug] Initializing bootstrap context
-2024-05-24T06:22:59.695Z     +1ms [debug] Created AWS client CloudFormationClient
-2024-05-24T06:23:00.750Z  +1055ms [debug] Using identity Account: 626788337417 User: AIDAZD337A4E7B2ULH7DK
-2024-05-24T06:23:00.989Z   +239ms [debug] Loaded bootstrap status
-2024-05-24T06:23:00.989Z     +0ms [debug] Bootstrap context initialized {"status":"ready","version":"7.3","bucket":"sstbootstrap-useast124d14e4b-udbce1z7wnxx"}
-2024-05-24T06:23:02.360Z  +1371ms [debug] Synthesizing stacks...
-2024-05-24T06:23:02.367Z     +7ms [debug] Generating types in /Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf/.sst/types
-2024-05-24T06:23:02.498Z   +131ms [debug] Running "npx --yes open-next@2.3.8 build" script
+2024-05-24T06:31:17.139Z    +85ms [debug] Config loaded {"version":"2.42.0","cdkVersion":"2.142.1","constructsVersion":"10.3.0","config":{"name":"smart-pdf","region":"us-east-1","stage":"dembouz","ssmPrefix":"/sst/smart-pdf/dembouz/"},"metafile":{"inputs":{"sst.config.ts":{"bytes":213,"imports":[{"path":"sst","kind":"import-statement","external":true},{"path":"sst/constructs","kind":"import-statement","external":true}],"format":"esm"}},"outputs":{".sst.config.1716532277063.mjs":{"imports":[],"exports":["default"],"entryPoint":"sst.config.ts","inputs":{"sst.config.ts":{"bytesInOutput":124}},"bytes":306}}},"paths":{"config":"/Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf/sst.config.ts","root":"/Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf","out":"/Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf/.sst","artifacts":"/Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf/.sst/artifacts"}}
+2024-05-24T06:31:18.243Z  +1104ms [debug] Using AWS profile 
+2024-05-24T06:31:18.246Z     +3ms [debug] Created AWS client IoTClient
+2024-05-24T06:31:18.246Z     +0ms [debug] Getting IoT endpoint
+2024-05-24T06:31:18.257Z    +11ms [debug] Synthesizing stacks...
+2024-05-24T06:31:18.263Z     +6ms [debug] Created AWS client STSClient
+2024-05-24T06:31:19.021Z   +758ms [debug] Using IoT endpoint: a1fuyzbjnvim52-ats.iot.us-east-1.amazonaws.com
+2024-05-24T06:31:19.021Z     +0ms [debug] Initializing bootstrap context
+2024-05-24T06:31:19.022Z     +1ms [debug] Created AWS client CloudFormationClient
+2024-05-24T06:31:20.316Z  +1294ms [debug] Loaded bootstrap status
+2024-05-24T06:31:20.316Z     +0ms [debug] Bootstrap context initialized {"status":"ready","version":"7.3","bucket":"sstbootstrap-useast124d14e4b-udbce1z7wnxx"}
+2024-05-24T06:31:20.317Z     +1ms [debug] Created AWS client S3Client
+2024-05-24T06:31:20.522Z   +205ms [debug] Using identity Account: 626788337417 User: AIDAZD337A4E7B2ULH7DK
+2024-05-24T06:31:20.527Z     +5ms [debug] Generating types in /Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf/.sst/types
+2024-05-24T06:31:20.660Z   +133ms [debug] Running 1 deferred tasks with concurrency: 7
+2024-05-24T06:31:20.800Z   +140ms [debug] 
+2024-05-24T06:31:20.800Z     +0ms [debug] Loading v2 AWS SDK
+2024-05-24T06:31:20.801Z     +1ms [debug] Finished synthesizing
+2024-05-24T06:31:21.694Z   +893ms [debug] Created AWS client LambdaClient
+2024-05-24T06:31:21.859Z   +165ms [debug] IoT connected
+2024-05-24T06:31:22.793Z   +934ms [debug] Failed to assume arn:aws:iam::626788337417:role/dembouz-smart-pdf-Site-siteServerFunctionServiceRol-oWfMJ1sZCKub. {"name":"AccessDenied","$fault":"client","$metadata":{"httpStatusCode":403,"requestId":"498c3209-63c9-4513-9dc1-741239fe3458","attempts":1,"totalRetryDelay":0},"Type":"Sender","Code":"AccessDenied","message":"User: arn:aws:iam::626788337417:user/fadhel-de-project is not authorized to perform: sts:AssumeRole on resource: arn:aws:iam::626788337417:role/dembouz-smart-pdf-Site-siteServerFunctionServiceRol-oWfMJ1sZCKub"}
