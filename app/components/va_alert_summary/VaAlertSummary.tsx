@@ -2,7 +2,7 @@ import { View, Text, Image, Svg } from '@react-pdf/renderer';
 import { tw } from '../../../constants';
 import { FaBeer } from 'react-icons/fa';
 import { vaAlertSummaryData } from '../../data/va_alert_summary';
-import { renderToStaticMarkup } from 'react-dom/server';
+
 
 const SummaryTitle = () => {
   return (
@@ -18,12 +18,12 @@ const svgToDataUrl = (svg: string): string => {
   
 
 const AlertImage = ({ src }) => {
-    const beerIconSvgString = renderToStaticMarkup(<FaBeer />);
-    console.log(beerIconSvgString);
+    // const beerIconSvgString = renderToStaticMarkup(<FaBeer />);
+    // console.log(beerIconSvgString);
 
-    // Convert the SVG string to a data URL
-    const beerIconDataUrl = svgToDataUrl(beerIconSvgString);
-    console.log(beerIconDataUrl);
+    // // Convert the SVG string to a data URL
+    // const beerIconDataUrl = svgToDataUrl(beerIconSvgString);
+    // console.log(beerIconDataUrl);
     return (
         <Image src={src} style={tw("w-1/4 mx-2 h-full")}/>
     )

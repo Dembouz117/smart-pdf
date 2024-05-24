@@ -22,7 +22,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::626788337417:role/cdk-hnb659fds-deploy-role-626788337417-us-east-1",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::626788337417:role/cdk-hnb659fds-cfn-exec-role-626788337417-us-east-1",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-626788337417-us-east-1/1bcea5f8358094ffca574feec25f9bf2ea33fc4c16e319ab4ec89cd11d49c90c.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-626788337417-us-east-1/99d680cf91190895b058c8a80682bce45dac855fc131a11023a8f5651ba73fff.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -65,34 +65,10 @@
             "data": "CustomResourceHandlerE8FB56BA"
           }
         ],
-        "/dembouz-smart-pdf-Site/bucket/Bucket/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "bucketBucketF19722A9"
-          }
-        ],
-        "/dembouz-smart-pdf-Site/bucket/Bucket/Policy/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "bucketBucketPolicyCB3646ED"
-          }
-        ],
-        "/dembouz-smart-pdf-Site/bucket/Parameter_bucketName/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "bucketParameterbucketName121DCDDE"
-          }
-        ],
         "/dembouz-smart-pdf-Site/site/ServerFunctionRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "siteServerFunctionRole1F8F4FAC"
-          }
-        ],
-        "/dembouz-smart-pdf-Site/site/ServerFunctionRole/DefaultPolicy/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "siteServerFunctionRoleDefaultPolicy213DB8A5"
           }
         ],
         "/dembouz-smart-pdf-Site/site/ServerFunction/AssetReplacerPolicy/Resource": [

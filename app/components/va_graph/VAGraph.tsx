@@ -1,6 +1,3 @@
-"use client"
-
-import React, { useRef, useState } from 'react';
 import { Chart, registerables } from 'chart.js';
 import ChartJsImage from 'chartjs-to-image';
 import { tw } from '../../../constants';
@@ -19,8 +16,13 @@ const VaTitle = () => {
 
 }
 
+const getImageUrl = async (chart) => {
+    const chartImageUrl = await chart.toDataUrl();
+    return chartImageUrl;
+}
+
 const VaChart = () => {
-    const [chartImageUrl, setChartImageUrl] = useState("");
+    // const [chartImageUrl, setChartImageUrl] = useState("");
     const vaChart = new ChartJsImage();
 
 
@@ -41,7 +43,8 @@ const VaChart = () => {
     vaChart.setConfig(VaGraphConfig);
 
     vaChart.setWidth(500).setHeight(300).setChartJsVersion("4.3.3");
-    vaChart.toDataUrl().then((url) => setChartImageUrl(url));
+    const chartImageUrl = getImageUrl(vaChart);
+    
 
   return (
     <View style={tw("w-3/4 h-64 rounded-lg shadow-3xl drop-shadow-md border border-2 border-gray-200 p-4")}>

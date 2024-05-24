@@ -1,64 +1,12 @@
-2024-05-21T04:02:56.000Z    +58ms [debug] Config loaded {"version":"2.42.0","cdkVersion":"2.142.1","constructsVersion":"10.3.0","config":{"name":"smart-pdf","region":"us-east-1","stage":"dembouz","ssmPrefix":"/sst/smart-pdf/dembouz/"},"metafile":{"inputs":{"sst.config.ts":{"bytes":228,"imports":[{"path":"sst","kind":"import-statement","external":true},{"path":"sst/constructs","kind":"import-statement","external":true}],"format":"esm"}},"outputs":{".sst.config.1716264175953.mjs":{"imports":[],"exports":["default"],"entryPoint":"sst.config.ts","inputs":{"sst.config.ts":{"bytesInOutput":124}},"bytes":306}}},"paths":{"config":"/Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf/sst.config.ts","root":"/Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf","out":"/Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf/.sst","artifacts":"/Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf/.sst/artifacts"}}
-2024-05-21T04:02:56.978Z   +978ms [debug] Using AWS profile 
-2024-05-21T04:02:56.980Z     +2ms [debug] Created AWS client IoTClient
-2024-05-21T04:02:56.981Z     +1ms [debug] Getting IoT endpoint
-2024-05-21T04:02:56.992Z    +11ms [debug] Synthesizing stacks...
-2024-05-21T04:02:56.998Z     +6ms [debug] Created AWS client STSClient
-2024-05-21T04:02:58.683Z  +1685ms [debug] Using identity Account: 626788337417 User: AIDAZD337A4E7B2ULH7DK
-2024-05-21T04:02:58.687Z     +4ms [debug] Generating types in /Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf/.sst/types
-2024-05-21T04:02:58.812Z   +125ms [debug] Running 1 deferred tasks with concurrency: 7
-2024-05-21T04:02:58.890Z    +78ms [debug] Initializing bootstrap context
-2024-05-21T04:02:58.891Z     +1ms [debug] Created AWS client CloudFormationClient
-2024-05-21T04:03:00.814Z  +1923ms [debug] Using IoT endpoint: a1fuyzbjnvim52-ats.iot.us-east-1.amazonaws.com
-2024-05-21T04:03:02.132Z  +1318ms [debug] Loaded bootstrap status
-2024-05-21T04:03:02.132Z     +0ms [debug] Bootstrap context initialized {"status":"ready","version":"7.3","bucket":"sstbootstrap-useast124d14e4b-udbce1z7wnxx"}
-2024-05-21T04:03:02.134Z     +2ms [debug] Created AWS client S3Client
-2024-05-21T04:03:02.233Z    +99ms [debug] 
-2024-05-21T04:03:02.233Z     +0ms [debug] Loading v2 AWS SDK
-2024-05-21T04:03:02.233Z     +0ms [debug] Finished synthesizing
-2024-05-21T04:03:05.665Z  +3432ms [debug] Created AWS client LambdaClient
-2024-05-21T04:03:06.118Z   +453ms [debug] IoT connected
-2024-05-21T04:03:08.986Z  +2868ms [debug] Failed to assume arn:aws:iam::626788337417:role/dembouz-smart-pdf-Site-siteServerFunctionServiceRol-oWfMJ1sZCKub. {"name":"AccessDenied","$fault":"client","$metadata":{"httpStatusCode":403,"requestId":"6be38cea-d788-4a69-9d72-b1195e6dd872","attempts":1,"totalRetryDelay":0},"Type":"Sender","Code":"AccessDenied","message":"User: arn:aws:iam::626788337417:user/fadhel-de-project is not authorized to perform: sts:AssumeRole on resource: arn:aws:iam::626788337417:role/dembouz-smart-pdf-Site-siteServerFunctionServiceRol-oWfMJ1sZCKub"}
-2024-05-21T04:15:08.124Z +719136ms [debug] IoT error {"errno":-54,"code":"ECONNRESET","syscall":"read","type":"error","target":{"_events":{},"_eventsCount":0,"readyState":3,"bytesReceived":33,"extensions":null,"protocol":"mqttv3.1","_binaryType":"arraybuffer","_closeFrameReceived":false,"_closeFrameSent":false,"_closeMessage":"","_closeTimer":null,"_finalized":true,"_closeCode":1006,"_receiver":null,"_sender":null,"_socket":null,"_ultron":null,"protocolVersion":13,"_isServer":false,"url":"wss://a1fuyzbjnvim52-ats.iot.us-east-1.amazonaws.com/mqtt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZD337A4EW2OHHHNA%2F20240521%2Fus-east-1%2Fiotdevicegateway%2Faws4_request&X-Amz-Date=20240521T040302Z&X-Amz-SignedHeaders=host&X-Amz-Signature=3585ddfe69d0038ee230abb4fd93ca9e04dc952b5b1d02585a1c4106421326cf","_req":null}}
-2024-05-21T04:15:08.133Z    +11ms [debug] IoT closed
-2024-05-21T04:15:09.136Z  +1003ms [debug] IoT reconnecting...
-2024-05-21T04:15:12.893Z  +3757ms [debug] IoT connected
-2024-05-21T04:32:30.409Z +1037516ms [debug] IoT error {"errno":-54,"code":"ECONNRESET","syscall":"read","type":"error","target":{"_events":{},"_eventsCount":0,"readyState":3,"bytesReceived":13,"extensions":null,"protocol":"mqttv3.1","_binaryType":"arraybuffer","_closeFrameReceived":false,"_closeFrameSent":false,"_closeMessage":"","_closeTimer":null,"_finalized":true,"_closeCode":1006,"_receiver":null,"_sender":null,"_socket":null,"_ultron":null,"protocolVersion":13,"_isServer":false,"url":"wss://a1fuyzbjnvim52-ats.iot.us-east-1.amazonaws.com/mqtt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZD337A4EW2OHHHNA%2F20240521%2Fus-east-1%2Fiotdevicegateway%2Faws4_request&X-Amz-Date=20240521T041509Z&X-Amz-SignedHeaders=host&X-Amz-Signature=dddf530045ccd8394be7c6f92f4ce0e16564fe2cd7a2d11890adffb999ac1eb3","_req":null}}
-2024-05-21T04:32:30.411Z     +2ms [debug] IoT closed
-2024-05-21T04:32:31.510Z  +1099ms [debug] IoT reconnecting...
-2024-05-21T04:32:34.599Z  +3089ms [debug] IoT connected
-2024-05-21T04:49:13.338Z +998739ms [debug] IoT error {"errno":-54,"code":"ECONNRESET","syscall":"read","type":"error","target":{"_events":{},"_eventsCount":0,"readyState":3,"bytesReceived":17,"extensions":null,"protocol":"mqttv3.1","_binaryType":"arraybuffer","_closeFrameReceived":false,"_closeFrameSent":false,"_closeMessage":"","_closeTimer":null,"_finalized":true,"_closeCode":1006,"_receiver":null,"_sender":null,"_socket":null,"_ultron":null,"protocolVersion":13,"_isServer":false,"url":"wss://a1fuyzbjnvim52-ats.iot.us-east-1.amazonaws.com/mqtt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZD337A4EW2OHHHNA%2F20240521%2Fus-east-1%2Fiotdevicegateway%2Faws4_request&X-Amz-Date=20240521T043231Z&X-Amz-SignedHeaders=host&X-Amz-Signature=f4ef4a57d1b269344b27deb9d354de2498ec175f00e9b28b791f2ea892e18e5e","_req":null}}
-2024-05-21T04:49:13.339Z     +1ms [debug] IoT closed
-2024-05-21T04:49:14.277Z   +938ms [debug] IoT reconnecting...
-2024-05-21T04:49:15.333Z  +1056ms [debug] IoT connected
-2024-05-21T05:07:22.219Z +1086886ms [debug] IoT error {"errno":-54,"code":"ECONNRESET","syscall":"read","type":"error","target":{"_events":{},"_eventsCount":0,"readyState":3,"bytesReceived":21,"extensions":null,"protocol":"mqttv3.1","_binaryType":"arraybuffer","_closeFrameReceived":false,"_closeFrameSent":false,"_closeMessage":"","_closeTimer":null,"_finalized":true,"_closeCode":1006,"_receiver":null,"_sender":null,"_socket":null,"_ultron":null,"protocolVersion":13,"_isServer":false,"url":"wss://a1fuyzbjnvim52-ats.iot.us-east-1.amazonaws.com/mqtt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZD337A4EW2OHHHNA%2F20240521%2Fus-east-1%2Fiotdevicegateway%2Faws4_request&X-Amz-Date=20240521T044914Z&X-Amz-SignedHeaders=host&X-Amz-Signature=b8b87c865d048dbf28c137158f12583b03db0454db10e4d972717ac0e59dafc3","_req":null}}
-2024-05-21T05:07:22.219Z     +0ms [debug] IoT closed
-2024-05-21T05:07:23.318Z  +1099ms [debug] IoT reconnecting...
-2024-05-21T05:07:24.637Z  +1319ms [debug] IoT connected
-2024-05-21T05:09:45.730Z +141093ms [debug] IoT error {"errno":-54,"code":"ECONNRESET","syscall":"read","type":"error","target":{"_events":{},"_eventsCount":0,"readyState":3,"bytesReceived":13,"extensions":null,"protocol":"mqttv3.1","_binaryType":"arraybuffer","_closeFrameReceived":false,"_closeFrameSent":false,"_closeMessage":"","_closeTimer":null,"_finalized":true,"_closeCode":1006,"_receiver":null,"_sender":null,"_socket":null,"_ultron":null,"protocolVersion":13,"_isServer":false,"url":"wss://a1fuyzbjnvim52-ats.iot.us-east-1.amazonaws.com/mqtt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZD337A4EW2OHHHNA%2F20240521%2Fus-east-1%2Fiotdevicegateway%2Faws4_request&X-Amz-Date=20240521T050723Z&X-Amz-SignedHeaders=host&X-Amz-Signature=3462b6935deb6aebab029adfac0a89f68d894de1400a9bfe5946379eb61ff2c1","_req":null}}
-2024-05-21T05:09:45.735Z     +5ms [debug] IoT closed
-2024-05-21T05:09:46.738Z  +1003ms [debug] IoT reconnecting...
-2024-05-21T05:09:47.952Z  +1214ms [debug] IoT connected
-2024-05-21T06:14:30.472Z +3882520ms [debug] IoT error {"errno":-54,"code":"ECONNRESET","syscall":"read","type":"error","target":{"_events":{},"_eventsCount":0,"readyState":3,"bytesReceived":265,"extensions":null,"protocol":"mqttv3.1","_binaryType":"arraybuffer","_closeFrameReceived":false,"_closeFrameSent":false,"_closeMessage":"","_closeTimer":null,"_finalized":true,"_closeCode":1006,"_receiver":null,"_sender":null,"_socket":null,"_ultron":null,"protocolVersion":13,"_isServer":false,"url":"wss://a1fuyzbjnvim52-ats.iot.us-east-1.amazonaws.com/mqtt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZD337A4EW2OHHHNA%2F20240521%2Fus-east-1%2Fiotdevicegateway%2Faws4_request&X-Amz-Date=20240521T050946Z&X-Amz-SignedHeaders=host&X-Amz-Signature=d82c164fa5e99abdf832ed1ac080b18a3c925dacfbc94a7b233c9176dec75d52","_req":null}}
-2024-05-21T06:14:30.483Z    +11ms [debug] IoT closed
-2024-05-21T06:14:31.491Z  +1008ms [debug] IoT reconnecting...
-2024-05-21T06:14:40.495Z  +9004ms [debug] IoT connected
-2024-05-21T06:16:39.852Z +119357ms [debug] IoT closed
-2024-05-21T06:16:41.848Z  +1996ms [debug] IoT reconnecting...
-2024-05-21T06:16:46.002Z  +4154ms [debug] IoT connected
-2024-05-21T06:29:15.658Z +749655ms [debug] IoT error {"errno":-54,"code":"ECONNRESET","syscall":"read","type":"error","target":{"_events":{},"_eventsCount":0,"readyState":3,"bytesReceived":49,"extensions":null,"protocol":"mqttv3.1","_binaryType":"arraybuffer","_closeFrameReceived":false,"_closeFrameSent":false,"_closeMessage":"","_closeTimer":null,"_finalized":true,"_closeCode":1006,"_receiver":null,"_sender":null,"_socket":null,"_ultron":null,"protocolVersion":13,"_isServer":false,"url":"wss://a1fuyzbjnvim52-ats.iot.us-east-1.amazonaws.com/mqtt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZD337A4EW2OHHHNA%2F20240521%2Fus-east-1%2Fiotdevicegateway%2Faws4_request&X-Amz-Date=20240521T061641Z&X-Amz-SignedHeaders=host&X-Amz-Signature=bce0fcc29b925022d411db00472f094dbff557008606a12e2daf059a66385f4d","_req":null}}
-2024-05-21T06:29:15.776Z   +119ms [debug] IoT closed
-2024-05-21T06:29:16.780Z  +1004ms [debug] IoT reconnecting...
-2024-05-21T06:29:20.952Z  +4172ms [debug] IoT connected
-2024-05-21T06:36:02.586Z +401634ms [debug] IoT error {"errno":-54,"code":"ECONNRESET","syscall":"read","type":"error","target":{"_events":{},"_eventsCount":0,"readyState":3,"bytesReceived":25,"extensions":null,"protocol":"mqttv3.1","_binaryType":"arraybuffer","_closeFrameReceived":false,"_closeFrameSent":false,"_closeMessage":"","_closeTimer":null,"_finalized":true,"_closeCode":1006,"_receiver":null,"_sender":null,"_socket":null,"_ultron":null,"protocolVersion":13,"_isServer":false,"url":"wss://a1fuyzbjnvim52-ats.iot.us-east-1.amazonaws.com/mqtt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZD337A4EW2OHHHNA%2F20240521%2Fus-east-1%2Fiotdevicegateway%2Faws4_request&X-Amz-Date=20240521T062916Z&X-Amz-SignedHeaders=host&X-Amz-Signature=91c59747fef433dfed8c6eed4860eb8588766f4f06d48e9c6f32008d4ae96d79","_req":null}}
-2024-05-21T06:36:02.611Z    +25ms [debug] IoT closed
-2024-05-21T06:36:03.610Z   +999ms [debug] IoT reconnecting...
-2024-05-21T06:36:08.117Z  +4507ms [debug] IoT connected
-2024-05-21T06:55:02.294Z +1134177ms [debug] IoT error {"errno":-54,"code":"ECONNRESET","syscall":"read","type":"error","target":{"_events":{},"_eventsCount":0,"readyState":3,"bytesReceived":57,"extensions":null,"protocol":"mqttv3.1","_binaryType":"arraybuffer","_closeFrameReceived":false,"_closeFrameSent":false,"_closeMessage":"","_closeTimer":null,"_finalized":true,"_closeCode":1006,"_receiver":null,"_sender":null,"_socket":null,"_ultron":null,"protocolVersion":13,"_isServer":false,"url":"wss://a1fuyzbjnvim52-ats.iot.us-east-1.amazonaws.com/mqtt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZD337A4EW2OHHHNA%2F20240521%2Fus-east-1%2Fiotdevicegateway%2Faws4_request&X-Amz-Date=20240521T063603Z&X-Amz-SignedHeaders=host&X-Amz-Signature=940fa6f294c3f121173f7acba336293a991bee5538e9bfa72fbaba54c2b293d8","_req":null}}
-2024-05-21T06:55:02.301Z     +7ms [debug] IoT closed
-2024-05-21T06:55:03.315Z  +1014ms [debug] IoT reconnecting...
-2024-05-21T06:55:10.334Z  +7019ms [debug] IoT connected
-2024-05-21T07:16:19.626Z +1269291ms [debug] IoT error {"errno":-54,"code":"ECONNRESET","syscall":"read","type":"error","target":{"_events":{},"_eventsCount":0,"readyState":3,"bytesReceived":53,"extensions":null,"protocol":"mqttv3.1","_binaryType":"arraybuffer","_closeFrameReceived":false,"_closeFrameSent":false,"_closeMessage":"","_closeTimer":null,"_finalized":true,"_closeCode":1006,"_receiver":null,"_sender":null,"_socket":null,"_ultron":null,"protocolVersion":13,"_isServer":false,"url":"wss://a1fuyzbjnvim52-ats.iot.us-east-1.amazonaws.com/mqtt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZD337A4EW2OHHHNA%2F20240521%2Fus-east-1%2Fiotdevicegateway%2Faws4_request&X-Amz-Date=20240521T065503Z&X-Amz-SignedHeaders=host&X-Amz-Signature=aa46b1f0a3556f6a2213078a432d4568b387193021932c8ce5b7d78fcadc1ca3","_req":null}}
-2024-05-21T07:16:19.640Z    +15ms [debug] IoT closed
-2024-05-21T07:16:20.652Z  +1012ms [debug] IoT reconnecting...
-2024-05-21T07:16:24.401Z  +3749ms [debug] IoT connected
+2024-05-24T06:22:59.233Z    +67ms [debug] Config loaded {"version":"2.42.0","cdkVersion":"2.142.1","constructsVersion":"10.3.0","config":{"name":"smart-pdf","region":"us-east-1","stage":"dembouz","ssmPrefix":"/sst/smart-pdf/dembouz/"},"metafile":{"inputs":{"sst.config.ts":{"bytes":213,"imports":[{"path":"sst","kind":"import-statement","external":true},{"path":"sst/constructs","kind":"import-statement","external":true}],"format":"esm"}},"outputs":{".sst.config.1716531779182.mjs":{"imports":[],"exports":["default"],"entryPoint":"sst.config.ts","inputs":{"sst.config.ts":{"bytesInOutput":124}},"bytes":306}}},"paths":{"config":"/Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf/sst.config.ts","root":"/Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf","out":"/Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf/.sst","artifacts":"/Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf/.sst/artifacts"}}
+2024-05-24T06:22:59.691Z   +458ms [debug] Using AWS profile 
+2024-05-24T06:22:59.693Z     +2ms [debug] Created AWS client STSClient
+2024-05-24T06:22:59.694Z     +1ms [debug] Fetching app metadata
+2024-05-24T06:22:59.694Z     +0ms [debug] Initializing bootstrap context
+2024-05-24T06:22:59.695Z     +1ms [debug] Created AWS client CloudFormationClient
+2024-05-24T06:23:00.750Z  +1055ms [debug] Using identity Account: 626788337417 User: AIDAZD337A4E7B2ULH7DK
+2024-05-24T06:23:00.989Z   +239ms [debug] Loaded bootstrap status
+2024-05-24T06:23:00.989Z     +0ms [debug] Bootstrap context initialized {"status":"ready","version":"7.3","bucket":"sstbootstrap-useast124d14e4b-udbce1z7wnxx"}
+2024-05-24T06:23:02.360Z  +1371ms [debug] Synthesizing stacks...
+2024-05-24T06:23:02.367Z     +7ms [debug] Generating types in /Users/fadhelerlanggawibawanto/Desktop/Kabam/smartPdf/smart-pdf/.sst/types
+2024-05-24T06:23:02.498Z   +131ms [debug] Running "npx --yes open-next@2.3.8 build" script
