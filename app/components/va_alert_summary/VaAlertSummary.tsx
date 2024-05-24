@@ -32,13 +32,14 @@ const AlertImage = ({ src }) => {
 
 const SliderBar = ({ percentage }: { percentage: number}) => {
     const sliderWidth = `${percentage}%`;
-    const sliderRemainingWidth = `${100 - percentage}%`;
+    const sliderFullWidth = `${100}%`;
     return (
         <View style={tw("w-full h-full flex flex-row")}>
             {/* Orange slider */}
-            <View style={tw(`w-[${sliderWidth}] bg-status-warning rounded-l`)}/>
+            <View style={tw(`w-[${sliderFullWidth}] inset-0 absolute bg-status-good rounded-xl`)}/>
+            <View style={tw(`w-[${sliderWidth}] inset-0 absolute bg-status-warning rounded-xl`)}/>
             {/* Green slider */}
-            <View style={tw(`w-[${sliderRemainingWidth}] bg-status-good rounded-r`)}/>
+            
         </View>
     )
 }
@@ -68,12 +69,12 @@ const VaAlertSummary = () => {
         const totalDetections = alerts.reduce((acc, alert) => acc + alert.detections, 0);
         return (
         <View style={tw("flex-col gap-4")}>
-            <Text>Video Analytics Alerts by Category</Text>
+            <SummaryTitle/>
             <View style={tw("w-full flex flex-col justify-center items-center gap-4 mb-2 h-auto")}>
                 {alerts.map((alert) => {
                     const percentage = (alert.detections / totalDetections) * 100;
                     return (
-                    <View style={tw("w-3/4 flex-row flex h-8")}>
+                    <View style={tw("w-3/4 flex-row flex h-6")}>
                         <AlertImage src = {alert.alertImageUrl}/>
                         <SliderBar percentage={percentage}/>
                         <VaDetectionsColumn totalDetections={totalDetections} detections={alert.detections}/>

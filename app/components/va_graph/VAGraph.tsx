@@ -26,7 +26,17 @@ const VaChart = () => {
 
     const labels = mockGraphData.map(item => `${item.date.format('DD')} \n ${item.date.format('ddd')}`);
     const data = mockGraphData.map(item => item.detections);
-    const VaGraphConfig = createVaGraphConfig(labels, data);
+
+    // Calculate the maximum value in the dataset
+    const maxDataValue = Math.max(...data);
+
+    // Define the ceiling value (maximum value or another value of your choice)
+    const ceiling = Math.ceil(maxDataValue / 10) * 10; // Round up to the nearest 10
+
+    // Calculate the differences between the ceiling and the actual data
+    const differenceDataSet = data.map(value => ceiling - value);
+    const dataset = [data, differenceDataSet];
+    const VaGraphConfig = createVaGraphConfig(labels, dataset);
 
     vaChart.setConfig(VaGraphConfig);
 
