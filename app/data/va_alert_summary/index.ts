@@ -7,27 +7,27 @@ type VaAlertSummaryProps = {
 export const vaAlertSummaryData: VaAlertSummaryProps = {
     alerts: [
       {
-        alertImageUrl: 'https://example.com/image1.jpg',
+        alertImageUrl: 'example.png',
         detections: 3,
       },
       {
-        alertImageUrl: 'https://example.com/image2.jpg',
+        alertImageUrl: 'example.png',
         detections: 2,
       },
       {
-        alertImageUrl: 'https://example.com/image3.jpg',
+        alertImageUrl: 'example.png',
         detections: 5,
       },
       {
-        alertImageUrl: 'https://example.com/image4.jpg',
+        alertImageUrl: 'example.png',
         detections: 1,
       },
       {
-        alertImageUrl: 'https://example.com/image5.jpg',
+        alertImageUrl: 'example.png',
         detections: 4,
       },
       {
-        alertImageUrl: 'https://example.com/image6.jpg',
+        alertImageUrl: 'example.png',
         detections: 0,
       },
     ]

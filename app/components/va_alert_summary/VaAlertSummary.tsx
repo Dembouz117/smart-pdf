@@ -1,18 +1,29 @@
-import { Page, View, Text, Image, StyleSheet } from '@react-pdf/renderer';
+import { View, Text, Image, Svg } from '@react-pdf/renderer';
 import { tw } from '../../../constants';
-import { VaAlertSummaryType } from '../../schemas';
+import { FaBeer } from 'react-icons/fa';
 import { vaAlertSummaryData } from '../../data/va_alert_summary';
+import { renderToStaticMarkup } from 'react-dom/server';
 
 const SummaryTitle = () => {
   return (
-    <View>
-      <Text>Video Analytics Alerts by Category</Text>
+    <View style={tw("p-4 w-full")}>
+      <Text style={tw("text-lg")}>Video Analytics Alerts by Category</Text>
     </View>
   )
 }
 
-const AlertImage = ({ src }) => {
+const svgToDataUrl = (svg: string): string => {
+    return `data:image/svg+xml;base64,${btoa(svg)}`;
+  };
   
+
+const AlertImage = ({ src }) => {
+    const beerIconSvgString = renderToStaticMarkup(<FaBeer />);
+    console.log(beerIconSvgString);
+
+    // Convert the SVG string to a data URL
+    const beerIconDataUrl = svgToDataUrl(beerIconSvgString);
+    console.log(beerIconDataUrl);
     return (
         <Image src={src} style={tw("w-1/4 mx-2 h-full")}/>
     )

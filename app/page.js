@@ -1,10 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import dynamic from "next/dynamic";
 import React from 'react';
-import { Page, View, Image, Document, StyleSheet } from '@react-pdf/renderer';
-import { tw } from "../constants";
+import { Page, Document, StyleSheet } from '@react-pdf/renderer';
 import Performance from "./components/Performance";
 import PDFCalendar from "./components/PDFCalendar";
 import DeploymentTable from "./components/DeploymentTable"; 
@@ -12,6 +11,8 @@ import AlertGroup from "./components/va_alert/AlertGroup";
 
 import IntroHero from "./components/IntroHero";
 import VaAlertSummary from "./components/va_alert_summary/VaAlertSummary";
+import VaGraph from "./components/va_graph/VAGraph";
+import { tw } from "../constants";
 
 import ChartJsImage from 'chartjs-to-image';
 import { multiColorChartData, multiColorOptions } from "./graphConfig";
@@ -78,8 +79,8 @@ export default function Home() {
   <div className="w-full h-32 bg-red-200"></div>
       <PDFViewer className="w-screen h-screen bg-red-200">
         {/* <MyDocument/> */}
-        <Document className="w-full h-3/4">
-          <Page size="A4" className="w-full">
+        <Document >
+          <Page size="A4">
             <IntroHero/>
             <Performance/>
             <DeploymentTable/>
@@ -88,6 +89,7 @@ export default function Home() {
             {/* <View style={tw("flex flex-col items-center justify-center bg-red-200")}>
               <Image src={imageSrc} style={graphStyles.graph}/>
             </View> */}
+            <VaGraph/>
             
           </Page>
     <PDFCalendar year={2022} month={0}/>
