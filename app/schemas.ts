@@ -34,3 +34,8 @@ export type AlertGroupSchema = {
   alerts: AlertCardSchema[];
 }
 
+
+export type VaAlertSummaryType = {
+  alertImageUrl: string
+  detections: number;
+}

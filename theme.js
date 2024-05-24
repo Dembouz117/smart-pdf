@@ -9,6 +9,10 @@ const tailwindTheme = {
         kabam: {
           default: "#001A77",
           alternate: "#334892",
+        },
+        status: {
+          good: "#20BF56",
+          warning: "#FB8500"
         }
       }
     },
